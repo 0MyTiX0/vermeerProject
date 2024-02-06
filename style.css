@@ -1,0 +1,836 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui;
+    font-weight: 500;
+    background-color: #e7d8c9;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f0e7dc;
+    height: 85px;
+    color: #0f2c59;
+    font-size: 25px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: solid #0f2c59 2px;
+}
+
+#header_left {
+    display: flex;
+    width: 79px;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#header_left img {
+    width: 79px;
+    height: 63px;
+    justify-content: flex-start;
+}
+
+#header_right {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#header_right a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0f2c59;
+    margin-right: 7%;
+}
+
+#header_right a:hover {
+    color: #154ca3;
+}
+
+#header_right a:not(:hover) {
+    transition: 0.5s;
+}
+
+#oeuvres img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+#oeuvres_left_1 {
+    margin-top: 0;
+    justify-items: center;
+}
+
+#oeuvres img:hover {
+    transition: 1s;
+    width: 420px;
+}
+
+#oeuvres img:not(:hover) {
+    transition: 0.5s;
+}
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.detailsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsWrapper h1 {
+    max-width: 400px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: #0f2c59;
+}
+
+.detailsWrapper p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    font-size: 17px;
+    border: solid #f0e7dc 5px;
+    border-radius: 10px;
+    color: #0f2c59;
+    background-color: #f0e7dc;
+}
+
+.oeuvres_middle_1 {
+    margin-top: 6%;
+}
+
+.oeuvres_right_1 {
+    margin-top: 12%;
+}
+
+.oeuvres_left_2 {
+    margin-top: 12%;
+}
+
+.oeuvres_middle_2 {
+    margin-top: 6%;
+}
+
+.oeuvres_right_2 {
+    margin-top: 0;
+}
+
+.section {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .carrousel {
+    width: 100%;
+    overflow: hidden;
+    padding: 60px 0;
+    margin-top: 6%;
+    background: #f0e7dc;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .carrousel:before,
+  .carrousel:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .carrousel:hover .logos-slide {
+    animation-play-state: paused;
+  }
+  
+  .carrousel-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+  
+  .carrousel-slide img {
+    width: 200px;
+    margin: 0 40px;
+  }
+
+.video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+
+.video iframe {
+    border-radius: 10px;
+}
+
+#video_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#video_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.video p {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    width: 1000px;
+    color: #0f2c59;
+    margin-top: 3%;
+    background-color: #f0e7dc;
+    border: solid #f0e7dc 30px;
+    border-radius: 50px;
+}
+
+#plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    height: 500px;
+}
+
+#left_plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 500px;
+}
+
+#left_plan img {
+    width: 180px;
+    height: 144px;
+    margin-bottom: 4%;
+}
+
+#left_plan p {
+    display: flex;
+    text-align: center;
+    color: #0f2c59;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+#left_plan a {
+    text-decoration: none;
+}
+
+#left_plan button:hover {
+    display: flex;
+    margin-top: 10%;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid #ebd6c4 2px;
+    background-color: #0f2c59;
+    color: #f0e7dc;
+    font-size: 20px;
+    font-weight: 450;
+    transition: 0.5s;
+}
+
+#left_plan button:not(:hover) {
+    display: flex;
+    margin-top: 10%;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid #0f2c59 2px;
+    background-color: #f0e7dc;
+    color: #0f2c59;
+    font-size: 20px;
+    font-weight: 450;
+    transition: 0.5s;
+}
+
+#right_plan {
+    display: flex;
+    width: 600px;
+    height: 500px;
+    align-content: center;
+}
+
+#right_plan iframe {
+    border-radius: 30px;
+    height: 500px;
+}
+
+#biographie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4%;
+    color: #0f2c59;
+}
+
+#biographie h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#biographie p {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    width: 1000px;
+}
+
+#oeuvres_left_1 p {
+    justify-content: center;
+}
+
+#contact {
+    display: flex;
+    background-color: #f0e7dc;
+    margin: 0;
+    color: #0f2c59;
+    font-weight: 500;
+}
+
+#contact img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#contact_left {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact_right {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    transition: all .75s cubic-bezier(.19,1,.22,1);
+    
+    &--hide {
+      opacity: 0;
+      bottom: -100%;
+    }
+  }
+  
+  .cookie-button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.65rem 0.85rem;
+    margin-left: 0.45rem;
+    color: #fff;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    background-image: linear-gradient(62deg, #fbab7E 0%, #f7ce68 100%);
+    border-radius: 15px;
+  }  
+
+@media screen and (max-width: 1400px) {
+    #oeuvres img {
+        width: 300px;
+    }
+
+    #oeuvres img:hover {
+        width: 320px;
+    }
+
+    .detailsWrapper h1 {
+        width: 300px;
+    }
+    
+    .detailsWrapper p {
+        width: 300px;
+
+    }
+    
+    .video iframe {
+        width: 1024px;
+        height: 576px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    header {
+        font-size: 25px;
+    }
+
+    #oeuvres {
+        margin-top: 13%;
+    }
+
+    #oeuvres img {
+        width: 250px;
+    }
+
+    #oeuvres img:hover {
+        transition: 0s;
+        pointer-events: none;
+    }
+
+    #oeuvres img:not(:hover) {
+        transition: 0s;
+        pointer-events: none;
+    }
+
+    .detailsWrapper h1 {
+        width: 250px;
+    }
+    
+    .detailsWrapper p {
+        width: 250px;
+    }
+
+    .video iframe {
+        width: 768px;
+        height: 432px;
+    }
+
+    .video p {
+        width: 80%;
+    }
+
+    #plan {
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #left_plan button {
+        margin-bottom: 30%;
+    }
+
+    #biographie p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #oeuvres {
+        margin-top: 15%;
+    }
+
+    .video p {
+        font-size: 18px;
+    }
+
+    #biographie p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        font-size: 20px;
+    }
+
+    #oeuvres {
+        margin-top: 20%;
+    }
+
+    #oeuvres img {
+        width: 200px;
+    }
+
+    .detailsWrapper h1 {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .detailsWrapper p {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    .video iframe {
+        width: 640px;
+        height: 360px;
+    }
+
+    .video p {
+        width: 80%;
+    }
+
+    #left_plan button {
+        margin-bottom: 30%;
+    }
+
+    #biographie p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #header_right a {
+        font-size: 80%;
+        font-weight: 700;
+    }
+
+    #oeuvres img {
+        width: 300px;
+    }
+
+    .detailsWrapper h1 {
+        width: 300px;
+        font-size: 25px;
+    }
+
+    .detailsWrapper p {
+        width: 300px;
+        font-size: 20px;
+    }
+
+    .section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .oeuvres_left_1 {
+        margin-top: 10%;
+    }
+
+    .oeuvres_middle_1 {
+        margin-top: 10%;
+    }
+
+    .oeuvres_right_1 {
+        margin-top: 10%;
+    }
+
+    .oeuvres_left_2 {
+        margin-top: 10%;
+    }
+
+    .oeuvres_middle_2 {
+        margin-top: 10%;
+    }
+
+    .oeuvres_right_2 {
+        margin-top: 10%;
+    }
+
+    .carrousel {
+        height: 200px;
+    }
+
+    .carrousel-slide {
+        height: 200px
+    }
+    
+    .carrousel-slide img {
+        width: 150px;
+      }
+
+    .video iframe{
+        width: 512px;
+        height: 288px;
+    }
+
+    #left_plan {
+        width: 480px;
+    }
+
+    #right_plan {
+        width: 480px;
+        height: 360px;
+    }
+
+    #right_plan iframe{
+        width: 480px;
+        height: 360px;
+    }
+
+    #biographie h1 {
+        font-size: 35px;
+    }
+
+    #contact_left {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 80%;
+        font-weight: 600;
+    }
+
+    #contact_right {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact_right img {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 17px;
+    }
+
+    .video iframe {
+        width: 480px;
+        height: 270px;
+    }
+
+    .video p {
+        width: 80%;
+    }      
+}
+
+@media screen and (max-width: 550px) {
+    #contact {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header_left img{
+        width: 60px;
+        height: 48px;
+    }
+
+    #header_right {
+        width: 250px;
+    }
+
+    #header_right a {
+        font-weight: 600;
+        margin-right: 5%;
+    }
+
+    #oeuvres {
+        margin-top: 30%;
+    }
+
+    .video iframe {
+        width: 320px;
+        height: 180px;
+    }
+
+    .video p {
+        width: 80%;
+    }
+
+    #plan {
+        margin-bottom: 35%;
+    }
+
+    #left_plan {
+        width: 350px;
+    }
+
+    #left_plan img {
+        width: 150px;
+        height: 120px;
+    }
+
+    #right_plan {
+        width: 350px;
+        height: 225px;
+    }
+
+    #right_plan iframe{
+        width: 350px;
+        height: 275px;
+    }
+
+    #biographie h1 {
+        width: 80%;
+    }
+
+    #biographie p {
+        width: 80%;
+    }
+
+    #contact {
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    #header_left {
+        display: none;
+    }
+
+    #header_right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #header_right a {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #oeuvres img {
+        width: 250px;
+    }
+
+    .detailsWrapper h1 {
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .detailsWrapper p {
+        width: 250px;
+        font-size: 15px;
+    }
+
+    .video p {
+        font-size: 16px;
+    }
+
+    #plan {
+        margin-bottom: 10%;
+    }
+
+    #left_plan {
+        width: 300px;
+    }
+
+    #left_plan img {
+        width: 120px;
+        height: 96px;
+    }
+
+    #right_plan {
+        width: 300px;
+        height: 200px;
+    }
+
+    #right_plan iframe{
+        width: 300px;
+        height: 200px;
+    }
+
+    #biographie h1 {
+        font-size: 30px;
+    }
+
+    #biographie p {
+        font-size: 16px;
+    }
+
+    #contact_right img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #header_right a {
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 75%;
+    }
+
+    #oeuvres {
+        margin-top: 40%;
+    }
+
+    #oeuvres img {
+        width: 220px;
+    }
+
+    .detailsWrapper h1 {
+        width: 220px;
+        font-size: 18px;
+    }
+
+    .detailsWrapper p {
+        width: 220px;
+        font-size: 13px;
+    }
+
+    .video iframe {
+        width: 250px;
+        height: 169px;
+    }
+
+    #left_plan {
+        width: 250px;
+    }
+
+    #left_plan img {
+        width: 100px;
+        height: 80px;
+    
+    }
+
+    #right_plan {
+        width: 250px;
+    }
+
+    #right_plan iframe{
+        width: 250px;
+    }
+
+    #biographie h1 {
+        font-size: 25px;
+    }
+
+    #contact_left {
+        text-align: center;
+    }
+}
